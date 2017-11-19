@@ -52,18 +52,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Add Money"/>
                                 <connections>
+                                    <action selector="onClick:" destination="TpR-1p-tLE" eventType="touchUpInside" id="pKi-q2-0sc"/>
                                     <segue destination="yWg-Ce-W7q" kind="show" id="Obw-hY-uba"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-9o-n1N">
-                                <rect key="frame" x="103" y="111" width="168" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-9o-n1N">
+                                <rect key="frame" x="103" y="111" width="168" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dWm-9o-n1N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="Yu3-kP-QaB"/>
+                            <constraint firstItem="dWm-9o-n1N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eam-xn-NL3"/>
+                            <constraint firstItem="dWm-9o-n1N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="103" id="uEn-3G-vPK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Wallet" id="9QS-xK-CCz"/>
                     <connections>
@@ -71,6 +76,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="TpR-1p-tLE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-34.399999999999999" y="138.98050974512745"/>
         </scene>
@@ -97,6 +103,9 @@
                                 <rect key="frame" x="115" y="299" width="144" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitClicked:" destination="MRo-Uh-6vF" eventType="touchUpInside" id="r1t-pJ-YRm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remove Money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="854-v1-Mhh">
                                 <rect key="frame" x="92" y="72" width="191" height="57"/>
@@ -108,6 +117,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="oVW-Cs-ZeX" id="LgK-eh-W2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7i-7L-13x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,6 +148,9 @@
                                 <rect key="frame" x="115" y="299" width="144" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitClicked:" destination="yWg-Ce-W7q" eventType="touchUpInside" id="nem-eF-YO6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqh-pt-wec">
                                 <rect key="frame" x="92" y="72" width="191" height="57"/>
@@ -147,6 +162,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="qFa-IT-PWC" id="XKw-Zv-WVm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1b-Sz-2Rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

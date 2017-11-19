@@ -1,21 +1,20 @@
 import Foundation
 
 class Wallet {
-    
-    static func debit(money: Int) {
-        let store = UserDefaults.standard
+    static let store = UserDefaults.standard
+    static func credit(money: Int) {
         var amount:Int = store.integer(forKey: "amount")
-        amount = amount - money
+        amount = amount + money
+        store.set(amount, forKey: "amount")
     }
     
-    static func credit(money: Int) {
-        let store = UserDefaults.standard
+    static func debit(money: Int) {
         var amount:Int = store.integer(forKey: "amount")
         amount = amount - money
+        store.set(amount, forKey: "amount")
     }
     
     static func getAmount() -> Int {
-        let store = UserDefaults.standard
         return store.integer(forKey: "amount")
     }
 }

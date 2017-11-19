@@ -17,6 +17,7 @@
 		41623E7B1FB4D60900BD9FD2 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41623E7A1FB4D60900BD9FD2 /* Wallet.swift */; };
 		41623E7D1FB4D9BD00BD9FD2 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41623E7C1FB4D9BD00BD9FD2 /* CreditViewController.swift */; };
 		41623E7F1FB4D9CC00BD9FD2 /* DebitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41623E7E1FB4D9CC00BD9FD2 /* DebitViewController.swift */; };
+		417B9BC11FC194D400A2F9C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417B9BC01FC194D400A2F9C8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		41623E7A1FB4D60900BD9FD2 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		41623E7C1FB4D9BD00BD9FD2 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		41623E7E1FB4D9CC00BD9FD2 /* DebitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitViewController.swift; sourceTree = "<group>"; };
+		417B9BC01FC194D400A2F9C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +105,12 @@
 		414DE56C1FB4A7E600793A1C /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				417B9BC21FC194DE00A2F9C8 /* config */,
+				417B9BBD1FC1940300A2F9C8 /* controller */,
+				417B9BBF1FC194A300A2F9C8 /* model */,
+				417B9BBE1FC1944400A2F9C8 /* ui */,
 				414DE56D1FB4A7E600793A1C /* AppDelegate.swift */,
-				414DE56F1FB4A7E600793A1C /* ViewController.swift */,
-				41623E7C1FB4D9BD00BD9FD2 /* CreditViewController.swift */,
-				414DE5711FB4A7E600793A1C /* Main.storyboard */,
-				414DE5741FB4A7E600793A1C /* Assets.xcassets */,
-				414DE5761FB4A7E600793A1C /* LaunchScreen.storyboard */,
 				414DE5791FB4A7E600793A1C /* Info.plist */,
-				41623E7A1FB4D60900BD9FD2 /* Wallet.swift */,
-				41623E7E1FB4D9CC00BD9FD2 /* DebitViewController.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -132,6 +131,42 @@
 				414DE58F1FB4A7E600793A1C /* Info.plist */,
 			);
 			path = WalletUITests;
+			sourceTree = "<group>";
+		};
+		417B9BBD1FC1940300A2F9C8 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				41623E7E1FB4D9CC00BD9FD2 /* DebitViewController.swift */,
+				41623E7C1FB4D9BD00BD9FD2 /* CreditViewController.swift */,
+				414DE56F1FB4A7E600793A1C /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		417B9BBE1FC1944400A2F9C8 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				414DE5761FB4A7E600793A1C /* LaunchScreen.storyboard */,
+				414DE5741FB4A7E600793A1C /* Assets.xcassets */,
+				414DE5711FB4A7E600793A1C /* Main.storyboard */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		417B9BBF1FC194A300A2F9C8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				41623E7A1FB4D60900BD9FD2 /* Wallet.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		417B9BC21FC194DE00A2F9C8 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				417B9BC01FC194D400A2F9C8 /* GoogleService-Info.plist */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				414DE5781FB4A7E600793A1C /* LaunchScreen.storyboard in Resources */,
+				417B9BC11FC194D400A2F9C8 /* GoogleService-Info.plist in Resources */,
 				414DE5751FB4A7E600793A1C /* Assets.xcassets in Resources */,
 				414DE5731FB4A7E600793A1C /* Main.storyboard in Resources */,
 			);
